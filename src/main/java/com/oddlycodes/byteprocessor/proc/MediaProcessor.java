@@ -1,7 +1,6 @@
-package com.oddlycodes.byteprocessor.watcher;
+package com.oddlycodes.byteprocessor.proc;
 
 import com.oddlycodes.byteprocessor.controller.WatcherController;
-import com.oddlycodes.byteprocessor.events.MediaEncodeCompleteListener;
 import com.oddlycodes.byteprocessor.events.MediaEncodeData;
 import jakarta.annotation.PostConstruct;
 import net.bramp.ffmpeg.FFmpeg;
@@ -15,7 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.ApplicationEventMulticaster;
 import org.springframework.stereotype.Component;
 
@@ -26,13 +24,13 @@ public class MediaProcessor {
 
     private Logger logger = LoggerFactory.getLogger(WatcherController.class);
 
-    @Value("{ffmpeg.path}")
+    @Value("${ffmpeg.path}")
     private String ffmpegPath;
 
-    @Value("{ffmpeg.probe.path}")
+    @Value("${ffmpeg.probe.path}")
     private String probePath;
 
-    @Value("{processor.output}")
+    @Value("${processor.output}")
     private String processedOutput;
 
     @Autowired
@@ -52,7 +50,7 @@ public class MediaProcessor {
         }
     }
 
-    public void mp4Encoder(String inputFile) {
+    public void mp4Encoder(String inputFile, String fileId) {
 
         FFmpegBuilder builder = new FFmpegBuilder()
                 .setInput(inputFile)
@@ -62,7 +60,7 @@ public class MediaProcessor {
                 .setAudioChannels(1)
                 .setAudioCodec("acc")
                 .setAudioSampleRate(48_000)
-                .setVideoCodec("libx264")
+                .setVideoCodec("l   ibx264")
                 .setVideoFrameRate(24, 1)
                 .setVideoResolution(640, 480)
                 .setStrict(FFmpegBuilder.Strict.EXPERIMENTAL)
@@ -80,14 +78,13 @@ public class MediaProcessor {
                 // double percentage = progress.out_time_ns / duration_ns;
                 // TODO: progress report
                 if (progress.status == Progress.Status.END) {
-                    MediaEncodeData encodeData = new MediaEncodeData(this, "media encoding complete");
+                    MediaEncodeData encodeData = new MediaEncodeData(this, "media encoding complete", "output-path", fileId);
                     mediaEncodeCompleter.multicastEvent(encodeData);
                 }
             }
         });
 
         job.run();
-
 
     }
 

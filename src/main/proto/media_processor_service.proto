@@ -4,11 +4,11 @@ option java_multiple_files=true;
 option java_outer_classname="MediaUploadServiceProto";
 option java_package="com.oddlycodes.byteprocessor.rpc";
 
-package rpc;
+package com.oddlycodes.byteprocessor.rpc;
 
 service MediaUploadService {
 
-  rpc MediaUpload(UploadRequest) returns (UploadResponse) {}
+  rpc MediaUpload(UploadRequest) returns (stream UploadResponse) {}
 
 }
 

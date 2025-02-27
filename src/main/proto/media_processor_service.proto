@@ -1,0 +1,27 @@
+syntax="proto3";
+
+option java_multiple_files=true;
+option java_outer_classname="MediaUploadServiceProto";
+option java_package="com.oddlycodes.byteprocessor.rpc";
+
+package rpc;
+
+service MediaUploadService {
+
+  rpc MediaUpload(UploadRequest) returns (UploadResponse) {}
+
+}
+
+message UploadRequest {
+
+  string filePath = 1;
+  string fileId = 2;
+
+}
+
+message UploadResponse {
+
+  string fileProcessedPath = 1;
+  string fileId = 2;
+
+}

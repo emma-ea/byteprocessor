@@ -1,0 +1,52 @@
+2025-02-27 02:19:20,624 INFO o.s.b.StartupInfoLogger [main] Starting ByteprocessorApplication using Java 21.0.5 with PID 85927 (/Users/emma/viewlit/byteprocessor/target/classes started by emma in /Users/emma/viewlit/byteprocessor)
+2025-02-27 02:19:20,624 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.3, Spring v6.2.1
+2025-02-27 02:19:20,625 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-27 02:19:20,983 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 9090 (http)
+2025-02-27 02:19:21,004 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-27 02:19:21,007 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-27 02:19:21,007 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 02:19:21,036 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-27 02:19:21,036 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 396 ms
+2025-02-27 02:19:21,066 INFO n.b.f.RunProcessFunction [main] {ffmpeg.path} -version
+2025-02-27 02:19:21,208 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9090"]
+2025-02-27 02:19:21,222 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 9090 (http) with context path '/'
+2025-02-27 02:19:21,226 INFO o.s.b.StartupInfoLogger [main] Started ByteprocessorApplication in 0.812 seconds (process running for 0.964)
+2025-02-27 02:19:31,313 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 02:19:31,327 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-02-27 02:19:35,430 INFO o.s.b.StartupInfoLogger [main] Starting ByteprocessorApplication using Java 21.0.5 with PID 86088 (/Users/emma/viewlit/byteprocessor/target/classes started by emma in /Users/emma/viewlit/byteprocessor)
+2025-02-27 02:19:35,431 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.3, Spring v6.2.1
+2025-02-27 02:19:35,431 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-27 02:19:35,779 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 9090 (http)
+2025-02-27 02:19:35,785 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-9090"]
+2025-02-27 02:19:35,786 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-02-27 02:19:35,787 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-02-27 02:19:35,817 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-02-27 02:19:35,818 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 372 ms
+2025-02-27 02:19:35,861 INFO n.b.f.RunProcessFunction [main] {ffmpeg.path} -version
+2025-02-27 02:19:36,094 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-9090"]
+2025-02-27 02:19:36,110 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 9090 (http) with context path '/'
+2025-02-27 02:19:36,115 INFO o.s.b.StartupInfoLogger [main] Started ByteprocessorApplication in 0.905 seconds (process running for 1.044)
+2025-02-27 02:20:04,998 INFO o.a.j.l.DirectJDKLog [http-nio-9090-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-02-27 02:20:04,999 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Initializing Servlet 'dispatcherServlet'
+2025-02-27 02:20:05,000 INFO o.s.w.s.FrameworkServlet [http-nio-9090-exec-1] Completed initialization in 1 ms
+2025-02-27 02:20:05,019 INFO c.o.b.c.WatcherController [http-nio-9090-exec-1] live from watchController
+2025-02-27 02:28:38,266 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-02-27 02:28:38,279 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-02-27 02:29:02,159 INFO o.s.b.StartupInfoLogger [main] Starting ByteprocessorApplicationTests using Java 21.0.5 with PID 87102 (started by emma in /Users/emma/viewlit/byteprocessor)
+2025-02-27 02:29:02,160 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.3, Spring v6.2.1
+2025-02-27 02:29:02,160 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-27 02:29:02,451 INFO n.b.f.RunProcessFunction [main] {ffmpeg.path} -version
+2025-02-27 02:29:02,454 ERROR c.o.b.w.MediaProcessor [main] Cannot run program "{ffmpeg.path}": error=2, No such file or directory
+2025-02-27 02:29:02,667 INFO o.s.b.StartupInfoLogger [main] Started ByteprocessorApplicationTests in 0.695 seconds (process running for 1.175)
+2025-02-27 02:29:39,848 INFO o.s.b.StartupInfoLogger [main] Starting ByteprocessorApplicationTests using Java 21.0.5 with PID 87309 (started by emma in /Users/emma/viewlit/byteprocessor)
+2025-02-27 02:29:39,849 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.3, Spring v6.2.1
+2025-02-27 02:29:39,849 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-27 02:29:40,136 INFO n.b.f.RunProcessFunction [main] {ffmpeg.path} -version
+2025-02-27 02:29:40,140 ERROR c.o.b.w.MediaProcessor [main] Cannot run program "{ffmpeg.path}": error=2, No such file or directory
+2025-02-27 02:29:40,321 INFO o.s.b.StartupInfoLogger [main] Started ByteprocessorApplicationTests in 0.624 seconds (process running for 0.995)
+2025-02-27 02:30:03,987 INFO o.s.b.StartupInfoLogger [main] Starting ByteprocessorApplicationTests using Java 21.0.5 with PID 87489 (started by emma in /Users/emma/viewlit/byteprocessor)
+2025-02-27 02:30:03,988 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.3, Spring v6.2.1
+2025-02-27 02:30:03,989 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2025-02-27 02:30:04,255 INFO n.b.f.RunProcessFunction [main] {ffmpeg.path} -version
+2025-02-27 02:30:04,259 ERROR c.o.b.w.MediaProcessor [main] Cannot run program "{ffmpeg.path}": error=2, No such file or directory
+2025-02-27 02:30:04,445 INFO o.s.b.StartupInfoLogger [main] Started ByteprocessorApplicationTests in 0.6 seconds (process running for 0.973)
